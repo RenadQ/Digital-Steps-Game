@@ -1,0 +1,21 @@
+                                                -----------------------------------------------
+                                               |                                               |
+                                               |         Type of Programing Languages          |
+                                               |                                               |
+                                                -----------------------------------------------
+                                                                       |
+                                                                       |
+                             __________________________________________|_________________________________________
+                            |                                                                                    |
+                            |                                                                                    |
+                            |                                                                                    |
+                            |                                                                                    |
+                            V                                                                                    V  
+                --------------------------                                                            ------------------------
+               | 1) Hight-level language  |                                                          | 2) Low-level language  |
+                --------------------------                                                            ------------------------
+                            |                                                                                    |
+                            |                                                                                    |
+                            V                                                                                    V
+       more human-readable & easier to understand.                            closer to the machine code & less human-readable & require more detailed instructions.
+              Such as Python, Java.                                                                   Such as Assembly language and C.

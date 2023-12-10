@@ -1,0 +1,145 @@
+	-------------------------------------------------------------------------------------------			
+					|	OOP competition		|
+	-------------------------------------------------------------------------------------------
+
+	1) Which member of the superclass is never accessible to the subclass?
+
+	a.Public member
+	b.Protected member
+	c.Private member
+	d.All of the mentioned
+	-------------------------------------------------------------------------------------------
+	2) Which class cannot create its instance?
+
+	a.Parent class
+	b.Nested class
+	c.Anonymous class
+	d.Abstract class
+	-------------------------------------------------------------------------------------------
+	3)Encapsulation adds the function in a user-defined structure.
+	
+	a.True	
+	b.False
+	-------------------------------------------------------------------------------------------
+	4)Which of the following variable violates the definition of encapsulation?
+
+	a.Array variables
+	b.Local variables
+	c.Global variables
+	d.Public variables
+	-------------------------------------------------------------------------------------------
+	5) How can the concept of encapsulation be achieved in the program?
+
+	a.By using the Access specifiers
+	b.By using the concept of Abstraction
+	c.By using only private members
+	d.By using the concept of Inheritance
+	-------------------------------------------------------------------------------------------
+	6)Which of the following statement of a program is not right?
+
+	a.class teacher{ }; teacher s[5];
+	b.class teacher{ }s;
+	c.class teacher{ }; teacher s;
+	d.class teacher{ }s[];
+	-------------------------------------------------------------------------------------------
+	7)The object cannot be________?
+
+	a.passed by copy
+	b.passed as function
+	c.passed by value
+	d.passed by reference
+	-------------------------------------------------------------------------------------------
+	8)Which class/ or set of classes can describe the concept of polymorphism in the following code?
+
+		abstract class student_details  
+		{  
+   		public : int marksofstudent;  
+   		calculate_grade();  
+		}  
+		class topper:public student_details  
+		{  
+    		public : calculate_grade()  
+    		{   
+        		return 15;   
+   		 }  
+		};  
+		class average:public student_details  
+		{   
+     		public : calculate_grade()  
+     		{  
+         		return 30;   
+     		}  
+		};  
+		class failed{ int marksofstudent; };  
+
+	a.Only the student_details class can show the concept of polymorphism
+	b.The class which is 'failed' should also inherit class student for this code to work for polymorphism
+	c.The student_details, topper and average classes together can show the concept of polymorphism
+	d.Only the student_details and topper class together can show the concept of polymorphism
+
+	-------------------------------------------------------------------------------------------
+	9)Which among the following cannot be used for the concept of polymorphism?
+
+	a.Static member function
+	b.Constructor Overloading
+	c.Member function overloading
+	d.Global member function
+	-------------------------------------------------------------------------------------------
+	10)When is the object created with a new keyword?
+	a.at run time
+	b.at compile time
+	c.depends on code
+	d.none
+	-------------------------------------------------------------------------------------------
+	11)What is the output of the following Java program?
+
+		class Parent {
+    		String name = "parent";
+    		String message() {
+        	return "from parent";
+    		}
+		}
+
+		class Child extends Parent {
+    		String name = "child";
+    		String message() {
+        	return "from child";
+    		}
+		}
+
+		public class Main {
+    		public static void main(String[] args) {
+        	Parent p = new Child();
+        	System.out.println(p.name + " " + p.message());
+    		}
+		}
+
+	a."parent from parent" 
+	b."child from child" 
+	c."parent from child" 
+	d."child from parent" 
+	-------------------------------------------------------------------------------------------
+	12)What is the output of the following Java program?
+		public class Vehicle {
+    		public void move() {
+        	System.out.println("The vehicle moves");
+    		}
+		}
+
+		public class Car extends Vehicle {
+    		public void move() {
+        	System.out.println("The car moves");
+    		}
+		}
+
+		public class Main {
+    		public static void main(String[] args) {
+        	Vehicle vehicle = new Car();
+        	vehicle.move();
+    		}
+	}
+	a."The vehicle moves" 
+	b."The car moves" 
+	c.The code does not compile 
+	d.None of the above 
+	-------------------------------------------------------------------------------------------

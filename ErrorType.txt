@@ -1,0 +1,31 @@
+                                                -----------------------------------------------
+                                               |                                               |
+                                               |        type of Eroor in programming           |
+                                               |                                               |
+                                                -----------------------------------------------
+                                                                       |
+                                                                       |
+                             __________________________________________|_______________________________________________
+                            |                                          |                                               |
+                            |                                          |                                               |
+                            |                                          |                                               |
+                            |                                          V                                               |
+                            V                                                                                          V  
+                  -------------------------                -------------------------                       ------------------------
+                 |      Syntax Erorr       |              |     Runtime Error       |                     |      Logic Error       |
+                  -------------------------                -------------------------                       ------------------------
+                             |                                         |                                                |
+                             |                                         |                                                |
+                             V                                         V                                                V
+                  ------------------------                 -------------------------                       --------------------------
+                 | Violations of language |               | Errores that occur      |                     |  Flaws in the program's  |                        
+                 | rules causing code to  |               | during program exection.|                     | logic, resulting in      |                        
+                 |   fail compilation.    |               |e.g.Divison by Zero      |                     | unexpected behsvior.     |
+                 |e.g. Missing semicolon  |               |                         |                     |e.g. incorrect condition  |                        
+                 | at the end of statment |               |   int result = 10/0;    |                     | in an if statment:       |
+                 |                        |               |                         |                     |                          |
+                 |       int x=5          |                -------------------------                      | if (x>5) instead of      |
+                  ------------------------                                                                | if (x>=5). So, the code  |
+                                                                                                          | is correct but the result|
+                                                                                                          | not like what you want.  |
+                                                                                                           --------------------------
