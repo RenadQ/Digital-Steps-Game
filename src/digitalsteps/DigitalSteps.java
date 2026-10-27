@@ -552,7 +552,7 @@ if (quizSystemEnter == 'y' || quizSystemEnter == 'Y'){
         String playerName = scanner2.nextLine();
         Table scoreTable = new Table();
         
-        scoreTable.readFromFile("data.txt");
+        scoreTable.readFromFile("resources/data.txt");
         // Print the initial table
         scoreTable.printTable();
         // Check if the score can enter the top 10
@@ -573,14 +573,13 @@ if (quizSystemEnter == 'y' || quizSystemEnter == 'Y'){
         System.out.print(DesingText.ANSI_Cyan_BACKGROUND+"Enter a comment to leave for evreyone : "+DesingText.ANSI_RESET);
         System.out.println(DesingText.ANSI_Blue);
         String comment = writeToFile.nextLine();
-        table.writeCommentToFile(comment, "score.txt");
+        table.writeCommentToFile(comment, "resources/score.txt");
          
          System.out.println(DesingText.ANSI_Cyan_BACKGROUND+"Thank you for your participation in our Digital Steps game. We appreciate your contribution and support. "+DesingText.ANSI_RESET);
         
 
 
     }//end of main class
-`
         
          
 
@@ -627,7 +626,7 @@ if (quizSystemEnter == 'y' || quizSystemEnter == 'Y'){
      try{
   // Open the file that is the first 
   // command line parameter
-  FileInputStream fstream = new FileInputStream("textfilemcq.txt");
+  FileInputStream fstream = new FileInputStream("resources/textfilemcq.txt");
   // Get the object of DataInputStream
   DataInputStream in = new DataInputStream(fstream);
   BufferedReader br = new BufferedReader(new InputStreamReader(in));

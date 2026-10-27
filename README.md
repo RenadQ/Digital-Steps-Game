@@ -1,24 +1,65 @@
-Digital steps
+# 👣 Digital Steps
 
-Digital steps game program designed to teach Java programming in stages! Whether you're a beginner or an experienced programmer, this program has got you covered.
+A console game that teaches **Java and Object-Oriented Programming** step by step, from your very first variable to inheritance and polymorphism. Learn a topic, take a quiz, earn points and compete on the score table.
 
+> Team project for the Computer Science department, Imam Abdulrahman Bin Faisal University (IAU).
 
-Introduction
-The purpose of this report is to present a program designed to facilitate the learning of the Java programming language in an interactive and engaging manner. The program is structured to cater to users with varying levels of programming experience, starting from beginners and progressing through intermediate and advanced stages. By covering the basics of programming concepts and the Java language, this program aims to provide a comprehensive learning experience for individuals interested in acquiring or enhancing their Java programming skills.
+---
 
-Objectives
+## 🎯 Objectives
 
-•	Making Learning Easy for Beginners: Digital Steps aims to make learning easier for novice programmers by providing step-by-step tutorials. In addition, exercises to consolidate concepts. The goal is to help beginners overcome the initial challenges of learning programming and gain confidence in their abilities.
+- **Easy start for beginners:** step-by-step lessons and exercises that help new programmers get past the first hurdles.
+- **Skill building for intermediate learners:** loops, arrays, methods and problem solving.
+- **Advanced OOP:** classes, objects, relationships, inheritance, polymorphism and more.
 
-•	Skill Development: For intermediate learners, Digital Steps focuses on expanding their knowledge of the Java language and improving their problem-solving skills. The app introduces intermediate concepts. For example, the Loop, the Array, the Method, and so on.
+**Who it's for:** CS students, self-learners who like a gamified approach, programmers moving to Java, and anyone curious about Java OOP.
 
-•	Competency development: Digital Steps meets the needs of experienced programmers by offering advanced topics such as explaining classes, objects, relationships, inheritance, polymorphism, etc. The goal is to enable experienced developers to confidently handle complex Java projects efficiently.
+## 🎮 Features
 
-Targeted audience
-Our main audience for DigitalSteps games are CS major students, programmers, and anyone interested in learning Java OOP. This encompasses beginner programmers seeking an interactive learning experience, self-learners looking for a gamified approach, experienced programmers transitioning to Java, and hobbyists exploring Java OOP for personal projects. The game aims to provide an engaging and immersive environment for individuals from various backgrounds who want to learn or enhance their Java OOP skills.
+- **Two roles:** play as a **Player** to learn and take quizzes, or log in as an **Admin** to manage content.
+- **Three levels:** Beginner → Intermediate → Advanced, each with lessons and a quiz.
+- **Quizzes and scoring:** multiple-choice questions with instant feedback, plus an OOP competition quiz.
+- **Score table:** compete with other players and see the rankings.
+- **Learning extras:** reading material on program design, types of programming languages and common error types.
+- **Feedback:** players can leave comments at the end.
+- **Colored console UI** using ANSI colors.
 
-Reason for choosing the program
-Digital Steps is a game that aims to teach the Java programming language interactively. The reason why we have chosen this program is that we aim to spread the concept of learning programming languages outside the framework of school and university education so that learning a programming language is fun, easy, and available to the public at all times. Also, we have chosen a game to learn programming languages in particular, as learning programming languages helps individuals acquire problem-solving skills, and programming languages with training are easy to understand, so our interactive game will make it easier for the player to learn Java language quickly.
+## 📁 Project structure
 
-Conclusion
-In brief, Digital Steps is an exceptional educational application suitable for programmers at all levels. It provides a comprehensive curriculum, adaptive learning features, and interactive content. By facilitating beginner-friendly learning, enhancing skill development, and promoting advanced proficiency, Digital Steps empowers individuals to effectively master the Java language. With Digital Steps, programmers can unleash their full potential in the world of Java programming.
+```
+.
+├── src/digitalsteps/
+│   ├── DigitalSteps.java        # Main entry point (menus, roles, flow)
+│   ├── User.java / Player.java / Admin.java
+│   ├── Quiz.java                # Base quiz logic + learning material
+│   ├── Beginner.java / BeginnerQuiz.java
+│   ├── Intermediate.java / IntermediateQuiz.java
+│   ├── Advance.java             # Advanced OOP lessons
+│   ├── CreatePrivateClass.java  # Quiz system classes
+│   ├── Scoretable.java          # Competition & score table
+│   └── DesingText.java          # Console colors
+└── resources/                   # Text files the game reads and writes
+    ├── textfilemcq.txt          # OOP competition questions
+    ├── Disign.txt / PRlevel.txt / ErrorType.txt   # Learning material
+    ├── data.txt                 # Score table data
+    └── score.txt                # Player comments
+```
+
+## ▶️ How to run
+
+Requires Java (JDK 8 or newer). Run these from the project root so the game can find the `resources/` folder:
+
+```bash
+javac -encoding UTF-8 -d out src/digitalsteps/*.java
+java -cp out digitalsteps.DigitalSteps
+```
+
+You can also open the project in NetBeans or IntelliJ and run `DigitalSteps.java`. Just set the working directory to the project root.
+
+---
+
+<details>
+<summary>🇸🇦 ملخص بالعربي</summary>
+
+**Digital Steps** لعبة تعليمية تشتغل في الـ Console، وتعلّم لغة Java والبرمجة الكائنية (OOP) خطوة بخطوة، على ثلاث مستويات: مبتدئ، ومتوسط، ومتقدم. كل مستوى فيه دروس واختبار. وفيها جدول نقاط للمنافسة بين اللاعبين، ودورين: لاعب ومشرف.
+</details>

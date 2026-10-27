@@ -149,12 +149,12 @@ public class Quiz{
                     break;
                 case 2:
                     // calling method to print the learning content from a file
-                    DigitalSteps.FileRead("Disign.txt");
+                    DigitalSteps.FileRead("resources/Disign.txt");
 
                     break;
                 case 3:
                     // calling method to print the learning content from a file
-                   DigitalSteps.FileRead("PRlevel.txt");
+                   DigitalSteps.FileRead("resources/PRlevel.txt");
                     break;
                 case 4:
                     System.out.println("\n"+line+"\n"+"1.Paython: "+"\n"+"Python is a popular, high-level programming language known for its simplicity, readability, and versatility. "
@@ -166,7 +166,7 @@ public class Quiz{
                     break;
                 case 5:
                     // calling method to print the learning content from a file
-                    DigitalSteps.FileRead("ErrorType.txt");
+                    DigitalSteps.FileRead("resources/ErrorType.txt");
 
                     System.out.println("the context of programming, an error refers to an unexpected or incorrect behavior that occurs during the execution of a program."+"\n"+"Errors can prevent the program from running properly or producing the desired results."+"\n"+"Understanding and addressing errors is an essential part of the debugging and troubleshooting process." );
 
