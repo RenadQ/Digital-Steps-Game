@@ -24,6 +24,31 @@ A console game that teaches **Java and Object-Oriented Programming** step by ste
 - **Feedback:** players can leave comments at the end.
 - **Colored console UI** using ANSI colors.
 
+## 🗄️ Database design
+
+In a follow-up **Database Concepts & Design (CIS 321)** course, we designed a **MySQL** database for Digital Steps. It stores players, admins, lessons, quiz questions and scores, and supports account creation, level tracking and the global competition.
+
+<p align="center">
+  <img src="docs/images/erd.png" width="48%" alt="ER diagram">
+  <img src="docs/images/relational-mapping.png" width="40%" alt="Relational mapping">
+</p>
+
+- **Entities:** `Administrative`, `Player`, `lesson`, `Question`, `Quiz`
+- **Relationships (M:N):** admin *displays* player, admin *updates* quiz, player *takes* lesson, player *answers* question (with a score)
+- **SQL features:** primary/foreign keys, `UNIQUE` and `NOT NULL` constraints, nested queries (including relational division), `GROUP BY` and aggregates, views, stored procedures, a function (average score per player) and a trigger that rejects invalid scores
+
+| File | What it contains |
+|---|---|
+| [`database/schema.sql`](database/schema.sql) | Creates the database and all tables |
+| [`database/sample_data.sql`](database/sample_data.sql) | Demo data (all names, emails and phone numbers are fictional) |
+| [`database/queries.sql`](database/queries.sql) | Queries, views, procedures, function and trigger |
+
+```bash
+mysql -u root -p < database/schema.sql
+mysql -u root -p < database/sample_data.sql
+mysql -u root -p < database/queries.sql
+```
+
 ## 📁 Project structure
 
 ```
@@ -38,11 +63,13 @@ A console game that teaches **Java and Object-Oriented Programming** step by ste
 │   ├── CreatePrivateClass.java  # Quiz system classes
 │   ├── Scoretable.java          # Competition & score table
 │   └── DesingText.java          # Console colors
-└── resources/                   # Text files the game reads and writes
-    ├── textfilemcq.txt          # OOP competition questions
-    ├── Disign.txt / PRlevel.txt / ErrorType.txt   # Learning material
-    ├── data.txt                 # Score table data
-    └── score.txt                # Player comments
+├── resources/                   # Text files the game reads and writes
+│   ├── textfilemcq.txt          # OOP competition questions
+│   ├── Disign.txt / PRlevel.txt / ErrorType.txt   # Learning material
+│   ├── data.txt                 # Score table data
+│   └── score.txt                # Player comments
+├── database/                    # MySQL schema, sample data and queries
+└── docs/images/                 # ER diagram and relational mapping
 ```
 
 ## ▶️ How to run
