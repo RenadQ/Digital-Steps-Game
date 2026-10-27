@@ -17,7 +17,7 @@ INSERT INTO Player VALUES
 (103,'Ghaida','Nasser','ghaida_03@example.com','Ghaida_03','demo_pass_103','0511111103','Saudi Arabia','intermediate'),
 (104,'Shima','Omar','shima_04@example.com','shima_04','demo_pass_104','0511111104','Saudi Arabia','Advanced'),
 (105,'Ebhar','Sami','ebhar_05@example.com','ebhar_05','demo_pass_105','0511111105','Saudi Arabia',NULL),
-(106,'Lama','Khalid','lama_06@example.com','lama_06','demo_pass_106','0511111106','Kuwait','Beginner'),
+(106,'Layan','Khalid','layan_06@example.com','layan_06','demo_pass_106','0511111106','Kuwait','Beginner'),
 (107,'Yousef','Adel','yousef_07@example.com','yousef_07','demo_pass_107','0511111107','Saudi Arabia','Intermediate'),
 (108,'Aisha','Majed','aisha_08@example.com','aisha_08','demo_pass_108','0511111108','United Arab Emirates','Beginner'),
 (109,'Ahmad','Saud','ahmad_09@example.com','ahmad_09','demo_pass_109','0511111109','Saudi Arabia','Advanced'),
